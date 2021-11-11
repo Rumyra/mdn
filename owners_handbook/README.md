@@ -10,11 +10,11 @@ This provides owner guidelines for the MDN organization. Owners are those that w
 
 ## Platform updates
 
-Or new features. These will usually come in the form of issues raised on other repositories, or issues raised within the dedicated project itself. New issues will be added to the [dedicated project here on mdn/yari](https://github.com/mdn/yari/projects/11) with the `needs: triage` label. They should be added to the 'To triage' column.
+Or new features. These will usually come in the form of issues raised on other repositories, or issues raised within the dedicated project itself. New issues for platform updates should have the `Engineering request` label added.
 
 Time is set aside every fortnight (vaguely a sprint) to work on platform improvements. They can be anything from new requests of features, to updates that would be helpful, to urgent issues that affect our users.
 
-Issues should be read and discussed. If there are any irrelevant issues, they should be closed with the `won't fix` label applied, and a comment explaining why. `on hold` should be applied if there are any blockers to doing the work. If the issue has been added to the project by mistake and should exist elsewhere, move it.
+Issues should be read and discussed. If there are any irrelevant issues, they should be closed with the `wont fix` label applied, and a comment explaining why. `on hold` should be applied if there are any blockers to doing the work. If the issue has been added to the project by mistake and should exist elsewhere, move it.
 
 An issue should be reviewed with the following criteria:
 
@@ -32,8 +32,62 @@ An issue should be reviewed with the following criteria:
 
 This will give a good idea of what issues need and can be worked on. Issues that can be completed within the fortnight should be assigned and moved to the 'To do' column.
 
-
 ## Managing peers
+
+### Requests
+
+Peer requests should come through the request process. They be able to prove github experience and provide a resonable reason to becoming a peer. Ideally they will have provided an area or two of expertise (such as HTML or JavaScript).
+
+It's your judgement call as to whether we add them as a peer. It's worth noting they will gain write access to our repositories so if you want to push back then please do. If you're unsure it's worth asking them to contribute more and consistently, which should give a better idea of what to expect from them.
+
+If you're happy to add someone as a peer, make sure they agree to the issue triage process and pull request etiquette and code of conduct. Once that has happened you can add them as a member to the mdn github org. Add them to any appropriate teams so they can contribute to pull request reviews.
+
+## Teams
+
+Teams should be used to grant access to relevant repositories as well as assigning pull requests to relevant peers. Teams should be favoured over individual write access, as it's easier to see who has access to what.
+
+Each team should have a minimum of three members and ideally two maintainers (those who have the ability to manage members). Invites can go awry so make sure the invited user visits either https://github.com/orgs/mdn/invitation or https://github.com/mdn/content/invitations
+
+Here is a list of the mdn org teams:
+
+### Core
+
+**Core** This is the core mdn team. It's for those that work on the MDN team at Mozilla only.
+
+**owd** This a team with members from OWD so we can allow access to private projects we work on at MDN
+
+There is also a private Mozilla maintenance team which should not be removed.
+
+### Content
+
+**yari-content** This is the main team for all the sub content teams listed below. No one should be a member of this team directly but rather one of the sub teams.
+
+**yari-content-mdn** This is the 'default' team. It contains people on the Content Team at MDN and core peers. It allows access to example & demo repositories (such as mdn/interactive-examples) as well as mdn/translated-content and acts as the default pull request review team for docs within content that don't fall into other categories below. Add users with caution as this allows quite a bit of write access.
+
+**yari-content-accessibility** Accessibility Content team for reviewing pull requests associated with accessibility.
+
+**yari-content-html** HTML Content team for reviewing pull requests associated with HTML.
+
+**yari-content-svg** SVG Content team for reviewing pull requests associated with SVG.
+
+**yari-content-css** CSS Content team for reviewing pull requests associated with CSS.
+
+**yari-content-js** JS Content team for reviewing pull requests associated with JS.
+
+**yari-content-http** HTTP Content team for reviewing pull requests associated with server side things.
+
+**yari-content-web-api** WebAPI Content team for reviewing pull requests associated with Web APIs.
+
+**yari-content-moz-add-ons** Web Extensions Content team for reviewing pull requests associated with Web Extensions.
+
+### Content Pull Requests Reviews
+
+Pull requests reviews on mdn/content and it's associative repositories (translated-content, interactive-examples et al) are assigned via the 'round robin' style of auto assignment. A team is allocated to a repository or area and the members are allocated pr reviews one at a time.
+
+You can change and update who receives these review requests within each team via the teams settings.
+
+You can change and update which teams are assigned to repos via each repositories respective CODEOWNERS file, found in the .github directory.
+
 
 ## Translated content
 
